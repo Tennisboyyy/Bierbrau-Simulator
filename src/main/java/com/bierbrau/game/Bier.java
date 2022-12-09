@@ -1,4 +1,4 @@
-package com.bierbrau.main;
+package com.bierbrau.game;
 
 public class Bier {
 
