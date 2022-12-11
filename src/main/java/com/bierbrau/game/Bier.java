@@ -60,4 +60,36 @@ public class Bier {
         this.sorte = sorte;
     }
 
+    public String getHopfenNote(){
+        return hopfenNote;
+    }
+
+    public void sethopfenNote(String hn){
+        this.hopfenNote = hn;
+    }
+
+    public String getMalzNote(){
+        return malzNote;
+    }
+
+    public void setMalzNote(String mN){
+        this.malzNote = mN;
+    }
+
+    public String getHefeNote(){
+        return hefeNote;
+    }
+
+    public void setHefeNote(String heN){
+        this.hefeNote = heN;
+    }
+
+    public int getBierMenge(){
+        return bierMenge;
+    }
+
+    public void setBierMenge(int bierMenge){
+        this.bierMenge = bierMenge;
+    }
+
 }
