@@ -7,7 +7,10 @@ public class Bier {
     private double alkoholgehalt;
     private String name;
     private String sorte;
-
+    private String hopfenNote;
+    private String malzNote;
+    private String hefeNote;
+    private int bierMenge;
 
 
     public Bier(int stammwuerze, int farbe, int alkoholgehalt, String name) {
@@ -15,10 +18,7 @@ public class Bier {
         this.farbe = farbe;
         this.alkoholgehalt = alkoholgehalt;
         this.name = name;
-
-
     }
-
 
     public int getStammwuerze() {
         return stammwuerze;
