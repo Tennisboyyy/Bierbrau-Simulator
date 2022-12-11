@@ -13,7 +13,7 @@ public class Bier {
     private int bierMenge;
 
 
-    public Bier(int stammwuerze, int farbe, int alkoholgehalt, String name) {
+    public Bier(int stammwuerze, int farbe, int alkoholgehalt, String sorte) {
         this.stammwuerze = stammwuerze;
         this.farbe = farbe;
         this.alkoholgehalt = alkoholgehalt;
