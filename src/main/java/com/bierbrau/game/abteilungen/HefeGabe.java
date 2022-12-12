@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class HefeGabe {
+import java.io.Serializable;
+
+public class HefeGabe implements Serializable {
 
     public void hefeHinzugeben(){
         

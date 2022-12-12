@@ -1,4 +1,6 @@
 package com.bierbrau.game.abteilungen;
 
-public class Nachgaerung {
+import java.io.Serializable;
+
+public class Nachgaerung implements Serializable {
 }

@@ -19,14 +19,14 @@ public class MainMenu {
     public Button loadButton;
     public Button createButton;
 
-    private BorderPane settings;
+    /*private BorderPane settings;
     {
         try {
             settings = FXMLLoader.load(MainMenu.class.getResource("settings.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 
     public void settingsClick(ActionEvent actionEvent) {
         //Öffne Einstellungen

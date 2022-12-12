@@ -1,7 +1,9 @@
 package com.bierbrau.game;
 
 import com.bierbrau.game.abteilungen.*;
+import com.bierbrau.gui.ingame.IngameGUI;
 
+import java.io.IOException;
 import java.io.Serializable;
 
 public class Game implements Serializable {
@@ -27,6 +29,12 @@ public class Game implements Serializable {
         this.abfuellen = new Abfuellen();
         this.nachgaerung = new Nachgaerung();
         this.reifung = new Reifung();
+
+        try {
+            GameManager.ingameGUI = new IngameGUI();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public Maischen getMaischen() {

@@ -1,6 +1,8 @@
 package com.bierbrau.game;
 
-public class Bestellung {
+import java.io.Serializable;
+
+public class Bestellung implements Serializable {
 
     Bier bestelltesBier;
 

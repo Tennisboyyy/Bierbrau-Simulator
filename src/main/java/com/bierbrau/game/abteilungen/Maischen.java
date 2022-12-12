@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class Maischen {
+import java.io.Serializable;
+
+public class Maischen implements Serializable {
 
     public void erhitzen(){
     }

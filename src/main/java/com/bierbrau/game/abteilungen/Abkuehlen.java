@@ -1,8 +1,10 @@
 package com.bierbrau.game.abteilungen;
 
-public class Abkuehlen {
+import java.io.Serializable;
 
-    public void abkuehlen(){
+public class Abkuehlen implements Serializable {
+
+    public void abkuehlen() {
 
     }
 }

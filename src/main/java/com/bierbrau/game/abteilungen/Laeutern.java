@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class Laeutern {
+import java.io.Serializable;
+
+public class Laeutern implements Serializable {
 
     public void maischeSieben(){
 

@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class Reifung {
+import java.io.Serializable;
+
+public class Reifung implements Serializable {
 
     public void reifen(){
 

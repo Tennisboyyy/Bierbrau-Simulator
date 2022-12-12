@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class Abfuellen {
+import java.io.Serializable;
+
+public class Abfuellen implements Serializable {
 
     public void Fassbefuellen(){
         

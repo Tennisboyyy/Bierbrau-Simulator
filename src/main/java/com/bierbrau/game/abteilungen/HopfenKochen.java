@@ -1,6 +1,8 @@
 package com.bierbrau.game.abteilungen;
 
-public class HopfenKochen {
+import java.io.Serializable;
+
+public class HopfenKochen implements Serializable {
 
     public void würzeKochen(){
 

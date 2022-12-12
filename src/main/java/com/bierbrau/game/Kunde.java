@@ -1,6 +1,8 @@
 package com.bierbrau.game;
 
-public class Kunde {
+import java.io.Serializable;
+
+public class Kunde implements Serializable {
 
     private String name;
     Bestellung bestellung;

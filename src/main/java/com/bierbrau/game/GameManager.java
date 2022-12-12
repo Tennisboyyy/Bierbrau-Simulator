@@ -1,10 +1,13 @@
 package com.bierbrau.game;
 
+import com.bierbrau.gui.ingame.IngameGUI;
+
 import java.io.*;
 
 public class GameManager {
 
     public static Game game;
+    public static IngameGUI ingameGUI;
 
     public static void loadGame(String spielstand) throws IOException, ClassNotFoundException {
         FileInputStream fileInputStream = new FileInputStream("data/saves/" + spielstand + ".bbs");

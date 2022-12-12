@@ -1,6 +1,8 @@
 package com.bierbrau.game;
 
-public class Bier {
+import java.io.Serializable;
+
+public class Bier implements Serializable {
 
     private int stammwuerze;
     private double farbe;

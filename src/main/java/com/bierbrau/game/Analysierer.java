@@ -14,8 +14,6 @@ public class Analysierer {
         this.alkoholgehalt = userBier.getAlkoholgehalt();
         this.farbe = userBier.getFarbe();
         this.sorte = userBier.getSorte();
-
-
     }
 
     public String bierartAuswahl(int stammwuerze, double alkoholgehalt, double farbe) {

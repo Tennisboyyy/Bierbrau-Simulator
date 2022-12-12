@@ -1,4 +1,6 @@
 package com.bierbrau.game.abteilungen;
 
-public class Hauptgaerung {
+import java.io.Serializable;
+
+public class Hauptgaerung implements Serializable {
 }
