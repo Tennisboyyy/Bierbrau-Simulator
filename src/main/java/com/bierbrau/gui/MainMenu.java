@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,18 +19,19 @@ public class MainMenu {
     public Button continueButton;
     public Button loadButton;
     public Button createButton;
+    public BorderPane mainFrame;
 
-    /*private BorderPane settings;
+    private VBox settings;
     {
         try {
-            settings = FXMLLoader.load(MainMenu.class.getResource("settings.fxml"));
+            settings = (VBox) FXMLLoader.load(MainMenu.class.getResource("settings.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }*/
+    }
 
     public void settingsClick(ActionEvent actionEvent) {
-        //Öffne Einstellungen
+        mainFrame.setCenter(settings);
     }
 
     public void achievementsClick(ActionEvent actionEvent) {
