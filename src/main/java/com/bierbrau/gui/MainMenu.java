@@ -14,7 +14,6 @@ import java.io.IOException;
 public class MainMenu {
 
     public Button settingsButton;
-    public Button achievementsButton;
     public Button exitButton;
     public Button continueButton;
     public Button loadButton;

@@ -20,8 +20,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1280.0" style="-fx-spacing: 10;">
                <children>
-                  <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsClick" prefHeight="50.0" prefWidth="150.0" text="Einstellungen" />
-                  <Button fx:id="achievementsButton" mnemonicParsing="false" onAction="#achievementsClick" prefHeight="50.0" prefWidth="150.0" text="Erfolge" />
+                  <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsClick" prefHeight="50.0" prefWidth="310.0" text="Einstellungen" />
                </children>
             </HBox>
             <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitClick" prefHeight="50.0" prefWidth="310.0" text="Beenden" />

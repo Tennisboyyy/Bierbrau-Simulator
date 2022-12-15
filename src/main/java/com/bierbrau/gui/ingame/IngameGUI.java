@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class IngameGUI {
 
-    BorderPane aktuelleAbteilung;
+    public static BorderPane aktuelleAbteilung;
     ArrayList<Pane> abteilungen;
     private int index;
 
