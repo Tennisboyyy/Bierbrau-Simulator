@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="Maischen"
+               alignment="CENTER"
+               maxWidth="-Infinity">
+        </Label>
+    </top>
+
+    <left>
+        <Button text="zurück"
+                textAlignment="CENTER"
+                alignment="BOTTOM_CENTER"
+                maxWidth="-Infinity">
+
+        </Button>
+
+    </left>
+
+    <right>
+        <Button text="vorwärts"
+                textAlignment="CENTER"
+                alignment="BOTTOM_CENTER"
+                maxWidth="-Infinity">
+
+        </Button>
+    </right>
+
+    <bottom>
+        <ProgressBar>
+
+        </ProgressBar>
+    </bottom>
+
+    <center>
+        <Button text="Brenner einschalten"
+                textAlignment="CENTER"
+                alignment="BOTTOM_CENTER"
+                maxWidth="500">
+        </Button>
+
+    </center>
+
+
+</BorderPane>
