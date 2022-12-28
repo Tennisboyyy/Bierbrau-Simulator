@@ -10,4 +10,7 @@ module com.bierbrau.bierbrausimulator {
     opens com.bierbrau.game to javafx.fxml;
     exports com.bierbrau.gui;
     opens com.bierbrau.gui to javafx.fxml;
+    exports com.bierbrau.gui.ingame.abteilungen;
+    exports com.bierbrau.gui.ingame;
+
 }
