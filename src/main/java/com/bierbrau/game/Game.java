@@ -18,6 +18,7 @@ public class Game implements Serializable {
     private final Nachgaerung nachgaerung; //8
     private final Reifung reifung; //9
     private Bestellung aktuelleBestellung;
+    private Bier aktuellesBier;
 
     public Game() {
         this.maischen = new Maischen();
@@ -79,5 +80,13 @@ public class Game implements Serializable {
 
     public void setAktuelleBestellung(Bestellung aktuelleBestellung) {
         this.aktuelleBestellung = aktuelleBestellung;
+    }
+
+    public void setAktuellesBier(Bier aktuellesBier) {
+        this.aktuellesBier = aktuellesBier;
+    }
+
+    public Bier getAktuellesBier() {
+        return aktuellesBier;
     }
 }
