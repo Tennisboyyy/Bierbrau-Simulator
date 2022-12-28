@@ -21,11 +21,11 @@ public class IngameGUI {
         aktuelleAbteilung = new BorderPane();
         abteilungen = new ArrayList<>();
 
-        abteilung1 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
-        abteilung2 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
+       // abteilung1 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
+       // abteilung2 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
 
-        abteilungen.add(abteilung1);
-        abteilungen.add(abteilung2);
+       // abteilungen.add(abteilung1);
+       // abteilungen.add(abteilung2);
 
         HBox switcher = (HBox) FXMLLoader.load(IngameGUI.class.getResource("pageswitcher.fxml"));
         aktuelleAbteilung.setBottom(switcher);

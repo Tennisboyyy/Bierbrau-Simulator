@@ -30,11 +30,11 @@ public class Game implements Serializable {
         this.nachgaerung = new Nachgaerung();
         this.reifung = new Reifung();
 
-        try {
-            GameManager.ingameGUI = new IngameGUI();
+        /*try {
+           // GameManager.ingameGUI = new IngameGUI();
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 
     public Maischen getMaischen() {
