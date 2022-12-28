@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane_Maischen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bierbrau.gui.ingame.abteilungen.MaischenGUI">
+   <children>
+      <ImageView fx:id="image_Background" fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../../../../../img/MAISCHEN.jpg" />
+         </image>
+      </ImageView>
+      <Slider fx:id="slider_BrennerStaerke" layoutX="926.0" layoutY="227.0" orientation="VERTICAL" prefHeight="219.0" prefWidth="103.0" />
+      <ProgressBar fx:id="progBar_Temp" layoutX="344.0" layoutY="544.0" prefHeight="34.0" prefWidth="592.0" progress="0.0" />
+      <Label fx:id="label_BrennerStaerke" layoutX="897.0" layoutY="367.0" prefHeight="15.0" prefWidth="200.0" rotate="90.0" style="-fx-background-color: white;" text="Stärke des Brenners" />
+      <ToggleButton fx:id="button_Brenner" layoutX="566.0" layoutY="475.0" mnemonicParsing="false" onAction="#brennerAnAus" prefHeight="50.0" prefWidth="149.0" text="Brenner an/aus" />
+      <Label fx:id="label_GameContent" contentDisplay="CENTER" layoutX="322.0" layoutY="84.0" prefHeight="385.0" prefWidth="637.0" style="-fx-background-color: White;" textAlignment="CENTER">
+         <font>
+            <Font size="90.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Tutorial" layoutX="55.0" layoutY="190.0" prefHeight="273.0" prefWidth="258.0" style="-fx-background-color: white;" text="HIER KÖNNTE IHR TUTORIAL STEHEN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Brenner" layoutX="595.0" layoutY="375.0" prefHeight="71.0" prefWidth="91.0" text="       Brenner" />
+      <Label fx:id="label_Topf" layoutX="589.0" layoutY="218.0" prefHeight="118.0" prefWidth="103.0" text="           Topf" />
+      <Label fx:id="label_mixer" layoutX="625.0" layoutY="128.0" text="Mixer" />
+   </children>
+</Pane>

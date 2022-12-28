@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bierbrau.gui.Settings">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="630.0" style="-fx-spacing: 30;">
+         <children>
+            <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="Musik" />
+            <Slider fx:id="musicSlider" prefHeight="14.0" prefWidth="440.0" />
+            <Label text="100" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="630.0" style="-fx-spacing: 30;">
+         <children>
+            <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="Sound" />
+            <Slider fx:id="soundSlider" prefHeight="14.0" prefWidth="440.0" />
+            <Label text="100" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="630.0" style="-fx-spacing: 30;">
+         <children>
+            <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="Auto-Save Intervall" />
+            <ComboBox fx:id="autosaveCombo" prefHeight="30.0" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Pane prefHeight="10.0" prefWidth="630.0" style="-fx-background-color: #2C2C2C; -fx-background-radius: 20;" />
+      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="630.0" style="-fx-spacing: 30;">
+         <children>
+            <Button fx:id="applyButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" style="-fx-background-radius: 15;" text="Übernehmen" />
+            <Button fx:id="backButton" layoutX="260.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" style="-fx-background-radius: 15;" text="Zurück" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,24 +1,28 @@
 package com.bierbrau.game;
 
-public class Bier {
+import java.io.Serializable;
+
+public class Bier implements Serializable {
 
     private int stammwuerze;
     private double farbe;
     private double alkoholgehalt;
     private String name;
     private String sorte;
+    private String hopfenNote;
+    private String malzNote;
+    private String hefeNote;
+    private int bierMenge;
+
+    private boolean läuternBeendet;
 
 
-
-    public Bier(int stammwuerze, int farbe, int alkoholgehalt, String name) {
+    public Bier(int stammwuerze, int farbe, int alkoholgehalt, String sorte) {
         this.stammwuerze = stammwuerze;
         this.farbe = farbe;
         this.alkoholgehalt = alkoholgehalt;
         this.name = name;
-
-
     }
-
 
     public int getStammwuerze() {
         return stammwuerze;
@@ -60,4 +64,39 @@ public class Bier {
         this.sorte = sorte;
     }
 
+    public String getHopfenNote(){
+        return hopfenNote;
+    }
+
+    public void sethopfenNote(String hn){
+        this.hopfenNote = hn;
+    }
+
+    public String getMalzNote(){
+        return malzNote;
+    }
+
+    public void setMalzNote(String mN){
+        this.malzNote = mN;
+    }
+
+    public String getHefeNote(){
+        return hefeNote;
+    }
+
+    public void setHefeNote(String heN){
+        this.hefeNote = heN;
+    }
+
+    public int getBierMenge(){
+        return bierMenge;
+    }
+
+    public void setBierMenge(int bierMenge){
+        this.bierMenge = bierMenge;
+    }
+
+    public void setLaeutern(boolean b) {
+        läuternBeendet = b;
+    }
 }
