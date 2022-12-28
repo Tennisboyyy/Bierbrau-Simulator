@@ -12,7 +12,6 @@ public class Maischen implements Serializable {
             time++;
             temp += 0.2;
         }
-
     }
     public void malzHinzugabe(){
     }

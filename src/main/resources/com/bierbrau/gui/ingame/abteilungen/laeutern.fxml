@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="com.bierbrau.gui.ingame.abteilungen.LaeuternGUI" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="260.0" fitWidth="400.0" layoutX="826.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="becherFuellenButton" layoutX="406.0" layoutY="98.0" mnemonicParsing="false" onAction="#becherFuellen" prefHeight="40.0" prefWidth="150.0" text="Becher füllen">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Pane fx:id="fluessigkeitsStrahl" layoutX="1005.0" layoutY="266.0" prefHeight="232.0" prefWidth="40.0" />
+      <Label layoutX="1009.0" layoutY="537.0" text="Topf 2" />
+      <ImageView fitHeight="67.0" fitWidth="200.0" layoutX="926.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="1014.0" layoutY="373.0" text="Sieb" />
+      <ImageView fitHeight="260.0" fitWidth="400.0" layoutX="281.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="464.0" layoutY="496.0" text="Topf 1" />
+      <ImageView fx:id="becherLinks" fitHeight="150.0" fitWidth="160.0" layoutX="401.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="becherRechts" fitHeight="150.0" fitWidth="160.0" layoutX="945.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="becherEingiessenButton" layoutX="940.0" layoutY="98.0" mnemonicParsing="false" onAction="#becherEingiessien" text="Becher eingießen">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="tutorial" editable="false" layoutX="25.0" layoutY="148.0" prefHeight="400.0" prefWidth="240.0" />
+      <Label layoutX="115.0" layoutY="105.0" text="Tutorial">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
