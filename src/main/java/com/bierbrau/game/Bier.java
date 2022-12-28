@@ -14,6 +14,8 @@ public class Bier implements Serializable {
     private String hefeNote;
     private int bierMenge;
 
+    private boolean läuternBeendet;
+
 
     public Bier(int stammwuerze, int farbe, int alkoholgehalt, String sorte) {
         this.stammwuerze = stammwuerze;
@@ -94,4 +96,7 @@ public class Bier implements Serializable {
         this.bierMenge = bierMenge;
     }
 
+    public void setLaeutern(boolean b) {
+        läuternBeendet = b;
+    }
 }

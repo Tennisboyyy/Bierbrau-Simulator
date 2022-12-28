@@ -1,5 +1,7 @@
 package com.bierbrau.gui.ingame;
 
+import com.bierbrau.gui.ingame.abteilungen.LaeuternGUI;
+import com.bierbrau.gui.ingame.abteilungen.MaischenGUI;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -12,20 +14,27 @@ public class IngameGUI {
 
     public static BorderPane aktuelleAbteilung;
     ArrayList<Pane> abteilungen;
+    ArrayList<Object> guiController;
     private int index;
 
-    private Pane abteilung1;
-    private Pane abteilung2;
+    private Pane maischen;
+    private Pane laeutern;
 
     public IngameGUI() throws IOException {
         aktuelleAbteilung = new BorderPane();
         abteilungen = new ArrayList<>();
+        guiController = new ArrayList<>();
 
-        abteilung1 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
-        abteilung2 = (Pane) FXMLLoader.load(IngameGUI.class.getResource(""));
+        FXMLLoader maischenL = new FXMLLoader(IngameGUI.class.getResource("/abteilungen/MaischenGUI.fxml"));
+        maischen = (Pane) maischenL.load();
+        guiController.add((MaischenGUI)maischenL.getController());
 
-        abteilungen.add(abteilung1);
-        abteilungen.add(abteilung2);
+        FXMLLoader laeuternL = new FXMLLoader(IngameGUI.class.getResource("/abteilungen/laeutern.fxml"));
+        laeutern = (Pane) laeuternL.load();
+        guiController.add((LaeuternGUI)laeuternL.getController());
+
+        abteilungen.add(maischen);
+        abteilungen.add(laeutern);
 
         HBox switcher = (HBox) FXMLLoader.load(IngameGUI.class.getResource("pageswitcher.fxml"));
         aktuelleAbteilung.setBottom(switcher);
