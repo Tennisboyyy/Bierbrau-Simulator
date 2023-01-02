@@ -4,8 +4,9 @@ import com.bierbrau.game.Game;
 import com.bierbrau.game.GameManager;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.*;
 
 public class MaischenGUI {
     public Pane pane_Maischen;

@@ -1,5 +1,6 @@
 package com.bierbrau.gui.ingame.abteilungen;
 
+import com.bierbrau.game.GameManager;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -15,7 +16,7 @@ public class LaeuternGUI {
     public TextArea tutorial;
 
     public void becherFuellen(ActionEvent actionEvent) {
-
+        GameManager.game.getLaeutern().becherFuellen();
     }
 
     public void becherEingiessien(ActionEvent actionEvent) {

@@ -45,6 +45,7 @@ public class Maischen implements Serializable {
 
     public void malzHinzugabe(){
 
+
     }
     public void ruehren(){
     }
