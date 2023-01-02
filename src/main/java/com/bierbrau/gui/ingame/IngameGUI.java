@@ -7,12 +7,13 @@ import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 
+import java.io.Console;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class IngameGUI {
 
-    public static BorderPane aktuelleAbteilung;
+    public BorderPane aktuelleAbteilung;
     ArrayList<Pane> abteilungen;
     ArrayList<Object> guiController;
     private int index;
@@ -42,6 +43,8 @@ public class IngameGUI {
         aktuelleAbteilung.setTop(topBar);
 
         aktuelleAbteilung.setCenter(abteilungen.get(0));
+
+        //Subwub();
     }
 
     public void wechsel(int typ) {

@@ -2,6 +2,8 @@ package com.bierbrau.game.abteilungen;
 
 import com.bierbrau.game.Bier;
 import com.bierbrau.game.GameManager;
+import com.bierbrau.gui.ingame.abteilungen.LaeuternGUI;
+import javafx.scene.image.Image;
 import org.tools.tasks.AsyncTask;
 import org.tools.tasks.DelayedTask;
 
@@ -12,23 +14,24 @@ public class Laeutern implements Serializable {
     private int becherMenge;
     private int abgefüllteMenge;
 
+    LaeuternGUI gui = (LaeuternGUI) GameManager.ingameGUI.getGuiController().get(1);
+
     // === wird aufgerufen wenn der Becher gefüllt werden soll mit dem Bier (Linker Topf)
     public void becherFuellen() {
-        if(becherMenge == 0) {
+       /* if(becherMenge == 0) {
             int biermenge = GameManager.game.getAktuellesBier().getBierMenge() - abgefüllteMenge;
             if(biermenge != 0 && biermenge >= 2000) {
                 abgefüllteMenge += 2000;
                 becherMenge = 2000;
 
-
-                // === Becher erkennbar voll machen in der GUI und auf die Rechte seite verschieben
-
+                gui.becherLinks.setImage(new Image("src/main/resources/img/Becher_Gefüllt.png"));
 
             } else {
                 abgefüllteMenge += biermenge-abgefüllteMenge;
                 becherMenge = biermenge-abgefüllteMenge;
             }
-        }
+        }*/
+        //gui.becherLinks.setImage(new Image(getClass().getResourceAsStream("file:@img/Becher_Gefüllt.png")));
     }
 
     public void becherLeeren() {

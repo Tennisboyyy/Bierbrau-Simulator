@@ -48,7 +48,8 @@ public class MainMenu {
 
             GameManager.game = new Game();
 
-            mainFrame.setCenter(GameManager.ingameGUI.getAbteilungen().get(0));
+            mainFrame.setTop(null);
+            mainFrame.setCenter(GameManager.ingameGUI.getAktuelleAbteilung());
 
 
 
