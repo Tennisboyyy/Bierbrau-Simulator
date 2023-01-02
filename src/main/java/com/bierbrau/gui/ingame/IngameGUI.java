@@ -3,9 +3,9 @@ package com.bierbrau.gui.ingame;
 import com.bierbrau.gui.ingame.abteilungen.LaeuternGUI;
 import com.bierbrau.gui.ingame.abteilungen.MaischenGUI;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
+import javafx.scene.Node;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -67,5 +67,17 @@ public class IngameGUI {
 
     public ArrayList<Pane> getAbteilungen() {
         return abteilungen;
+    }
+
+    public void Subwub(){
+        BackgroundSize dSize = new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, true, false);
+        Background TutorialBG = new Background(new BackgroundImage(new Image("@../../../../../img/Papier_BG.jpg"),
+                BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, dSize));
+        MaischenGUI MaiGUI = (MaischenGUI) getGuiController().get(0);
+        MaiGUI.label_Tutorial.setBackground(TutorialBG);
+    }
+
+    public BorderPane getAktuelleAbteilung() {
+        return aktuelleAbteilung;
     }
 }

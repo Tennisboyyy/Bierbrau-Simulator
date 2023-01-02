@@ -34,5 +34,10 @@
       <Label fx:id="label_Topf" layoutX="589.0" layoutY="218.0" prefHeight="118.0" prefWidth="103.0" text="           Topf" />
       <Label fx:id="label_mixer" layoutX="625.0" layoutY="128.0" text="Mixer" />
       <Button layoutX="830.0" layoutY="475.0" mnemonicParsing="false" onAction="#malzHinzugabe" prefHeight="50.0" prefWidth="129.0" text="Malz hinzugeben" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="541.0" layoutY="177.0">
+         <image>
+            <Image url="@../../../../../img/Topf.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
