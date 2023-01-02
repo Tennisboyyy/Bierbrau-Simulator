@@ -45,15 +45,12 @@ public class MainMenu {
     }
 
     public void continueClick(ActionEvent actionEvent) {
-        try {
+
             GameManager.game = new Game();
 
-            Pane abteilung1 = (Pane) FXMLLoader.load(IngameGUI.class.getResource("abteilungen/MaischenGUI.fxml"));
-            mainFrame.setCenter(abteilung1);
+            mainFrame.setCenter(GameManager.ingameGUI.getAbteilungen().get(0));
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+
 
       /*  String letzterSpielstand = "";
         try {

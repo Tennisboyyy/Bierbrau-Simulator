@@ -25,11 +25,11 @@ public class IngameGUI {
         abteilungen = new ArrayList<>();
         guiController = new ArrayList<>();
 
-        FXMLLoader maischenL = new FXMLLoader(IngameGUI.class.getResource("/abteilungen/MaischenGUI.fxml"));
+        FXMLLoader maischenL = new FXMLLoader(IngameGUI.class.getResource("abteilungen/MaischenGUI.fxml"));
         maischen = (Pane) maischenL.load();
         guiController.add((MaischenGUI)maischenL.getController());
 
-        FXMLLoader laeuternL = new FXMLLoader(IngameGUI.class.getResource("/abteilungen/laeutern.fxml"));
+        FXMLLoader laeuternL = new FXMLLoader(IngameGUI.class.getResource("abteilungen/laeutern.fxml"));
         laeutern = (Pane) laeuternL.load();
         guiController.add((LaeuternGUI)laeuternL.getController());
 
@@ -61,4 +61,11 @@ public class IngameGUI {
         aktuelleAbteilung.setCenter(abteilungen.get(index));
     }
 
+    public ArrayList<Object> getGuiController() {
+        return guiController;
+    }
+
+    public ArrayList<Pane> getAbteilungen() {
+        return abteilungen;
+    }
 }

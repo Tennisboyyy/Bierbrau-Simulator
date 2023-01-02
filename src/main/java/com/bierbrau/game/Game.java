@@ -21,6 +21,12 @@ public class Game implements Serializable {
     private Bier aktuellesBier;
 
     public Game() {
+
+        try {
+            GameManager.ingameGUI = new IngameGUI();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         this.maischen = new Maischen();
         this.laeutern = new Laeutern();
         this.hopfenKochen = new HopfenKochen();
@@ -31,11 +37,7 @@ public class Game implements Serializable {
         this.nachgaerung = new Nachgaerung();
         this.reifung = new Reifung();
 
-        /*try {
-           // GameManager.ingameGUI = new IngameGUI();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
+
     }
 
     public Maischen getMaischen() {
